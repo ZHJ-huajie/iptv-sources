@@ -70,6 +70,28 @@ See <https://m3u.ibert.me> to get more.
 
 ## LICENSE
 
+#
+The project is developed with nodejs, so you can deploy directly with following steps:
+
+Confirm that you have installed nodejs first. If not, you can install it with nvm or see the offical website https://nodejs.org/en
+Clone the repo.
+git clone git@github.com:HerbertHe/iptv-sources.git
+
+cd iptv-sources
+Install yarn
+npm install yarn -g
+Install dependencies
+yarn install
+Build scripts
+yarn build
+Fetch sources
+If you want to use environment variables, you need to add them to PATH first. Or, run the following command with them.
+
+yarn m3u
+Start static service
+yarn serve
+Then, you can use it with http://127.0.0.1:8080 or http://[::1]:8080
+
 GPL-3.0 &copy; Herbert He
 
 本项目基于 GPL-3.0 协议开源。
